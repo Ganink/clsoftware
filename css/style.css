@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     margin: 0;
@@ -13,6 +18,12 @@ a[href^="mailto:"]::after {
 
 }
 
+.title-section{
+ 
+    text-transform: uppercase;
+    color: #a23a0a;
+}
+
 .display-6 {
     font-size: 2rem;
     font-weight: 300;
@@ -24,16 +35,12 @@ a[href^="mailto:"]::after {
     width: 100% !important;
 }
 
-.block, .content-white, .content-black{
-    margin-top: 5%;
-}
-
 .block {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 75%;
 }
 
 .block-main {
@@ -41,7 +48,7 @@ a[href^="mailto:"]::after {
     height: 100%;
     position: relative;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 75%;
 
 }
 
@@ -85,6 +92,15 @@ a[href^="mailto:"]::after {
 .content-black {
     background: #222222;
     color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.content-white {
+    background: #ffffff;
+    color: #222222;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .content-title {
@@ -124,6 +140,109 @@ a[href^="mailto:"]::after {
     font-size: 100%;
 }
 
+/*tecnologys*/
+.clients-list {
+    margin-top: 7.2rem;
+}
+
+.item-client {
+    border-color: rgba(255, 255, 255, 0.05);
+    border-width: 1px;
+    border-style: none solid solid none;
+    text-align: center;
+    padding: 2.4rem 0;
+}
+  
+.item-client a {
+    display: block;
+}
+  
+.item-client img {
+    -webkit-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    transform: scale(0.65);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+  
+.item-client:nth-child(4n) {
+    border-style: none none solid none;
+}
+  
+.item-client:nth-last-child(-n+4) {
+    border-bottom-style: none;
+}
+  
+.item-client a:hover img {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 1;
+}
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * clients
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width:1200px) {
+    padding-top: 16.2rem;
+    padding-bottom: 16.2rem;
+  }
+  
+  @media only screen and (max-width:1000px) {
+    .item-client {
+      padding: 1.5rem 0;
+    }
+  
+    .item-client img {
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+  
+  }
+  
+  @media only screen and (max-width:800px) {
+    .item-client:nth-child(n) {
+      border-style: none solid solid none;
+    }
+  
+    .item-client:nth-child(3n) {
+      border-style: none none solid none;
+    }
+  
+    .item-client:nth-last-child(-n+2) {
+      border-bottom-style: none;
+    }
+  
+  }
+  
+  @media only screen and (max-width:600px) {
+    .clients-list {
+      margin-top: 6rem;
+    }
+  
+    .item-client:nth-child(n) {
+      border-style: none solid solid none;
+    }
+  
+    .item-client:nth-child(2n) {
+      border-style: none none solid none;
+    }
+  
+    .item-client:nth-last-child(-n+2) {
+      border-bottom-style: none;
+    }
+  
+  }
+  
+  @media only screen and (max-width:400px) {
+    .clients-list {
+      margin-top: 3rem;
+    }
+  
+  }
+  
+  
 /*images media*/
 
 .row{
