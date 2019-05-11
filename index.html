@@ -4,7 +4,7 @@
 <head>
     <!--encrypt-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--css-->
@@ -46,15 +46,13 @@
     </nav>
 
     <!--main -->
-    <div class="block-main">
-        <img src="media/image/bg-3.jpg" data-speed="-1" class="img-parallax" id="inicio">
-        <h2>CL SOFTWARE</h2>
+    <div class="block-main" id="inicio">
+        <!--<img src="media/image/bg-3.jpg" data-speed="-1" class="img-parallax" id="inicio">-->
+        <h2 class="title-main">CL <span class="title-span">SOFTWARE</span></h2>
     </div>
-
     <!--about-->
-    <div class="content-white" id="about">
-        <div class="container">
-            <h2 class="title-section">- Nuestros trabajos</h2>
+    <div class="content-white container-fluid" id="about">
+            <h2 class="title-section">- Quiénes somos</h2>
             <h1 class="display-4">
                 CL SOFTWARE es una empresa de desarrollo informático con sede en Tenerife. Diseñamos páginas web,
                 aplicaciones móviles y más.
@@ -66,15 +64,14 @@
                 en el mercado. Gracias a nuestros conocimientos y experiencia, le aportamos soluciones eficientes y
                 personalizadas con las que situar su empresa a la vanguardia de la tecnología.
             </p>
-        </div>
     </div>
     <!--our service-->
-    <div class="block" id="service">
-        <img src="media/image/bg-6.jpg" data-speed="-1" class="img-parallax" />
-        <h4>Nuestros servicios están diseñados para diferenciar y hacer crecer su negocio.</h4>
+    <div class="content-white service-main container-fluid" id="service">
+            <h2 class="title-section">- Quiénes somos</h2>
+        <h4 class="display-4">Nuestros servicios están diseñados para diferenciar y hacer crecer su negocio.</h4>
     </div>
     <!--our works-->
-    <div class="content-white container-fluid" id="works">
+    <div class="content-white container-fluid works" id="works">
         <h2 class="title-section">- Nuestros trabajos</h2>
         <h1 class="display-4">
             Estos son algunos de nuestros proyectos favoritos que hemos hecho últimamente.
@@ -92,6 +89,9 @@
             </div>
         </div>
         <!--clients-->
+                <h1 class="display-6" style="text-align:center;">
+                        Opiniones de nuestros clientes.
+                    </h1>
         <div class="row">
             <div class="col">
                 <blockquote class="blockquote text-right">
@@ -177,7 +177,18 @@
     </div>
     <!--banner-->
     <div class="block">
-        <img src="media/image/bg-5.jpg" data-speed="-1" class="img-parallax">
+        <section id="stats" class="s-stats">
+            <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                <div class="col-block item-stats ">
+                    <div class="item-stats__count">10</div>
+                    <h5>Projectos Completados</h5>
+                </div>
+                <div class="col-block item-stats">
+                    <div class="item-stats__count">9</div>
+                    <h5>Clientes Felices</h5>
+                </div>
+            </div> <!-- end stats -->
+        </section> <!-- end s-stats -->
     </div>
     <!--contact-->
     <div class="content-black container-fluid" id="contact">
@@ -218,7 +229,7 @@
             </div>
         </div>
     </div>
-
+    
 
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -234,6 +245,7 @@
     <script src="js/paralax.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/navbar.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/stats.js"></script>
 </body>
 
 </html>
