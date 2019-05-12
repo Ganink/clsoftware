@@ -23,6 +23,7 @@ a[href^="mailto:"]::after {
 
 }
 
+
 .title-main{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #222222 !important;
@@ -36,10 +37,14 @@ a[href^="mailto:"]::after {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
     color: #a23a0a;
+    font-size: 3rem !important;
 }
 
 .display-4{
   font-family: 'KM', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem !important;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .display-6 {
@@ -179,15 +184,27 @@ a[href^="mailto:"]::after {
   position: relative;
 }
 
+.s-title{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: #a23a0a;
+}
+
+.s-col{
+  background: #ffffff67;
+  padding: 1%;
+}
+
+.s-col > .row > .col >p {
+  font-weight: 500;
+}
+
 /*tecnologys*/
 .clients-list {
     margin-top: 7.2rem;
 }
 
 .item-client {
-    border-color: rgba(255, 255, 255, 0.05);
-    border-width: 1px;
-    border-style: none solid solid none;
     text-align: center;
     padding: 2.4rem 0;
 }
