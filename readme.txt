@@ -1,1 +1,1 @@
-Link: https://ganink.github.io/clsoftware/
+Link: https://ganink.github.io/CLSoftware/
